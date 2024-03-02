@@ -6,30 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <title>send stuf</title>
+    <title>send stuff</title>
 </head>
 
 <body>
-    <small>Enter message and click button "Send"</small>
+    <small>Enter message and click "Send" button</small>
     <div class="wrapper centered">
         <article class="letter">
-            <div class="side">
-                <h1>Contact us</h1>
-                <p>
-                    <textarea placeholder="Your message"></textarea>
-                </p>
-            </div>
-            <div class="side">
-                <p>
-                    <input type="text" placeholder="Your name">
-                </p>
-                <p>
-                    <input type="email" placeholder="Your email">
-                </p>
-                <p>
-                    <button id="sendLetter">Send</button>
-                </p>
-            </div>
+            <form id="myForm" onsubmit="submitform(event)">
+                <div class="side">
+                    <h1>Tell Us!</h1>
+                    <p>
+                        <textarea id="msg" placeholder="Your message" required></textarea>
+                    </p>
+                </div>
+                <div class="side">
+                    <p>
+                        <input id="name" type="text" placeholder="Your name" required>
+                    </p>
+                    <p>
+                        <input id="email" type="email" placeholder="Your email" required>
+                    </p>
+                    <p>
+                        <button id="submit_button" type="submit">Send</button>
+                    </p>
+                </div>
+            </form>
         </article>
         <div class="envelope front"></div>
         <div class="envelope back"></div>
