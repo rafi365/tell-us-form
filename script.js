@@ -12,7 +12,7 @@ function sendingUI() {
 }
 function removesendingUI() {
     document.getElementById('submit_button').innerHTML = "Send"
-    document.getElementById('submit_button').disabled = true
+    document.getElementById('submit_button').disabled = false
 }
 
 function removeClass() {
